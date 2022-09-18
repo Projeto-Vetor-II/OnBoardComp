@@ -1,13 +1,3 @@
-/**
- * @file rc_altitude.c
- * @example    rc_altitude
- *
- * This serves as an example of how to read the barometer and IMU together to
- * estimate altitude
- *
- * @author     James Strawson
- * @date       3/14/2018
- */
 #include <stdio.h>
 #include <signal.h>
 #include <string.h>
@@ -77,6 +67,7 @@ static void __dmp_handler(void)
         }
         return;
 }
+
 int main(void)
 {       
         rc_bmp_set_sea_level_pressure_pa(102000);
@@ -182,61 +173,5 @@ int main(void)
         long long unsigned int counter = 0;
         long long unsigned int initial_time;
         //long long unsigned int aux;
-        while(running){
-                if(counter == 0) initial_time = rc_nanos_since_boot();
-                //rc_usleep(1000000/PRINT_HZ);
-                //printf("\r");
-                fprintf(fp,"%6.9lf,", (double)counter/1000000000);
-                fprintf(fp,"%8.4f,", kf.x_est.d[0]);
-                fprintf(fp,"%7.4f,", kf.x_est.d[1]);
-                fprintf(fp,"%7.4f,", kf.x_est.d[2]);
-                fprintf(fp,"%9.4f,", bmp_data.alt_m);
-                fprintf(fp,"%7.4f,", acc_lp.newest_output);
-                fprintf(fp,"\n");
-                //fflush(stdout);
-
-                printf("\r");
-                printf("%6.9lfs|", (double)counter/1000000000);
-                printf(" %8.4fm|", kf.x_est.d[0]);
-                printf(" %7.4fm/s|", kf.x_est.d[1]);
-                printf(" %7.4fm/s^2|", kf.x_est.d[2]);
-                printf(" %9.4fm|", bmp_data.alt_m);
-                printf(" %7.4fm/s^2|", acc_lp.newest_output);
-                //printf("%lld",rc_nanos_since_boot());
-                fflush(stdout);
-                rc_nanosleep(1000000000/FS - (rc_nanos_since_boot() - initial_time + 1185 - counter));
-                counter = rc_nanos_since_boot() - initial_time + 1185;
-                //if((double)counter/1000000000 >= 10) break;
-                if(acc_lp.newest_output >= 2)
-                {
-                        fclose(fp);
-                        printf("\n");
-                        rc_mpu_power_off();
-                        rc_bmp_power_off();
-                        return 1;
-                }
-                if((double)counter/1000000000 >= 10)
-                {
-                        fclose(fp);
-                        printf("\n");
-                        rc_mpu_power_off();
-                        rc_bmp_power_off();
-                        return 0;
-                }
-        }
-        //fclose(fp);
-        //printf("\n");
-        rc_mpu_power_off();
-        rc_bmp_power_off();
-        //return 0;
-}
-
-char *my_itoa(int num, char *str)
-{
-        if(str == NULL)
-        {
-                return NULL;
-        }
-        sprintf(str, "%d", num);
-        return str;
+		initial_time = rc_nanos_since_boot();
 }
