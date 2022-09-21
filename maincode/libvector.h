@@ -37,6 +37,7 @@ int init_sensors(rc_kalman_t *,rc_matrix_t *, rc_matrix_t *,rc_matrix_t *,rc_mat
 
 void headerbb(void);
 void headerll(FILE **);
+int checkIgnitor(void);
 
 void logging(rc_kalman_t *, rc_bmp_data_t *, rc_filter_t *, long long unsigned int, char *, char* ,char*, char*, int, unsigned int, FILE **);
 void console(rc_kalman_t *, rc_bmp_data_t *, rc_filter_t *, long long unsigned int);

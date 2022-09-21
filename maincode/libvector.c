@@ -122,6 +122,12 @@ void headerll(FILE **fp){
         fprintf(*fp,"\n");
 }
 
+int checkIgnitor(void)
+{
+        return !rc_gpio_get_value(3,1);
+}
+
+
 void logging(rc_kalman_t *kf, rc_bmp_data_t *bmp_data, rc_filter_t *acc_lp, long long unsigned int counter, char* path, char* pathNew, char* sufix, char* commLinux, int FS, unsigned int n_iterations, FILE ** fp)
 {
 

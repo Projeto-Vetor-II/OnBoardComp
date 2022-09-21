@@ -30,6 +30,7 @@
 
 #define TEMPO_DETECCAO  1                               //TEM QUE SER MULTIPLO INTEIRO DA DURACAO_JANELA
 #define COUNTER_MAX     TEMPO_DETECCAO*BMP_RATE_DIV
+#define TEMPO_ACIONAMENTO 2     // em segundos
 
 static int running = 0;
 //int *prtRunning = &running;
@@ -52,6 +53,10 @@ int main(void)
 
         rc_gpio_init(2,3,GPIOHANDLE_REQUEST_OUTPUT);
         rc_gpio_set_value(2,3,0);
+
+        rc_gpio_init(3,1,GPIOHANDLE_REQUEST_INPUT);
+        rc_gpio_init(3,2,GPIOHANDLE_REQUEST_OUTPUT);
+        rc_gpio_set_value(3,2,1);
 
         char commLinux[50];
 
@@ -104,6 +109,7 @@ int main(void)
         int caindo = 0;
         int paraquedas_acionado = 0;
         int counter_ignitor = 0;
+        int chegou_apogeu = 0;
 
         while(running){
                 if(counter == 0)
@@ -123,12 +129,13 @@ int main(void)
                         {
                                 counter_samples = 0;
                         }
-                        if(counter_samples >= 5)
+                        if(counter_samples >= 6)
                         {
                                 caindo = 1;
+                                chegou_apogeu = 1;
                                 counter_samples = 0;
                         }
-                        else
+                        else if(chegou_apogeu == 0)
                         {
                                 caindo = 0;
                         }
@@ -136,28 +143,25 @@ int main(void)
                         
                         leitura_anterior = leitura_nova;
                 }
+                
+                paraquedas_acionado = checkIgnitor();
 
                 if(caindo == 1 && paraquedas_acionado == 0)
-                {
-                        //rc_gpio_set_value(2,3,1);
-                        paraquedas_acionado = 1;
-                }
-
-                if(paraquedas_acionado == 1)
                 {        
-                        if(counter_ignitor < FS*2)
+                        if(counter_ignitor < FS*TEMPO_ACIONAMENTO)
                         {
                                 rc_gpio_set_value(2,3,1);
                                 counter_ignitor++;   
                         }
                         else
                         {
+                                rc_gpio_set_value(3,2,0);
                                 rc_gpio_set_value(2,3,0);
                                 counter_ignitor = 0;
-                                paraquedas_acionado = 0;
                         }
                 }
 
+                printf("Caindo: %d ---- Paraquedas_acionado: %d ----- SINAL_TESTE: %d ------ counter_ignitor: %d\n", caindo, paraquedas_acionado, rc_gpio_get_value(3,2), counter_ignitor);
                 logging(&kf, &bmp_data, &acc_lp, counter, path, pathNew, sufix, commLinux,FS, n_iterations, &fp);
                 //console(&kf, &bmp_data, &acc_lp, counter);
                 fflush(stdout);
