@@ -10,7 +10,7 @@
 #include <rc/mpu.h>
 #include <rc/gpio.h>
 #include <time.h>
-#include </qvectoronboard/maincode/libvector.h>
+#include </OnBoardComp/maincode/libvector.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 
@@ -66,7 +66,7 @@ int main(void)
         my_itoa(mytime,time_str);
 
         char path[50]; 
-        strcpy(path,"//qvectoronboard//logging//");
+        strcpy(path,"//OnBoardComp//logging//");
         strcat(path,time_str);
         mkdir(path,S_IRWXU);
         strcat(path,"//");

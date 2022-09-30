@@ -15,7 +15,7 @@
 //#include </qvectoronboard/Robotics_Cape_Installer/libraries/rc_usefulincludes.h>
 //#include </qvectoronboard/Robotics_Cape_Installer/libraries/roboticscape.h>
 
-#include </qvectoronboard/maincode/libvector.h>
+#include </OnBoardComp/maincode/libvector.h>
 
 #define Nx 3
 #define Ny 1
