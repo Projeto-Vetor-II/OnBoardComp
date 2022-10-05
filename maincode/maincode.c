@@ -24,6 +24,7 @@
 #define BMP_RATE_DIV 10 // optionally sample bmp less frequently than mpu
 
 #define FS 50 // hz
+#define new_bmp_rate_div 2
 
 //#define DURACAO_JANELA  1
 //#define TAM_JANELA      DURACAO_JANELA*BMP_RATE_DIV
@@ -109,17 +110,18 @@ int main(void)
         int caindo = 0;
         int paraquedas_acionado = 0;
         int counter_ignitor = 0;
-        int chegou_apogeu = 0;
+        int sinal_acionamento = 0;
 
         while (running)
         {
-                if (counter == 0)
+
+                if (n_iterations == 0)
                 {
                         initial_time = rc_nanos_since_boot();
                         leitura_nova = bmp_data.alt_m;
                 }
 
-                if (n_iterations % (FS / BMP_RATE_DIV) == 0)
+                if (n_iterations % (BMP_RATE_DIV) == 0)
                 {
                         leitura_nova = bmp_data.alt_m;
                         if (leitura_nova < leitura_anterior)
@@ -130,39 +132,38 @@ int main(void)
                         {
                                 counter_samples = 0;
                         }
-                        if (counter_samples >= 6)
+                        if (counter_samples >= 7)
                         {
                                 caindo = 1;
-                                chegou_apogeu = 1;
                                 counter_samples = 0;
                         }
-                        else if (chegou_apogeu == 0)
-                        {
-                                caindo = 0;
-                        }
+
                         printf("Valor novo: %9.4f ---- Valor antigo: %9.4f ----- Caindo: %i ----- Counter Samples: %d\n", leitura_nova, leitura_anterior, caindo, counter_samples);
 
                         leitura_anterior = leitura_nova;
                 }
 
-                paraquedas_acionado = checkIgnitor();
+                // paraquedas_acionado = checkIgnitor();
 
                 if (caindo == 1 && paraquedas_acionado == 0)
                 {
                         if (counter_ignitor < FS * TEMPO_ACIONAMENTO)
                         {
+                                sinal_acionamento = 1;
                                 rc_gpio_set_value(2, 3, 1);
                                 counter_ignitor++;
                         }
                         else
                         {
-                                rc_gpio_set_value(3, 2, 0);
+                                // rc_gpio_set_value(3, 2, 0);
                                 rc_gpio_set_value(2, 3, 0);
                                 counter_ignitor = 0;
+                                sinal_acionamento = 0;
+                                paraquedas_acionado = 1;
                         }
                 }
 
-                // printf("Caindo: %d ---- Paraquedas_acionado: %d ----- SINAL_TESTE: %d ------ counter_ignitor: %d\n", caindo, paraquedas_acionado, rc_gpio_get_value(3, 2), counter_ignitor);
+                printf("Caindo: %d ---- Paraquedas_acionado: %d ----- SINAL_TESTE: %d ------ counter_ignitor: %d\n", caindo, paraquedas_acionado, sinal_acionamento, counter_ignitor);
                 logging(&kf, &bmp_data, &acc_lp, counter, path, pathNew, sufix, commLinux, FS, n_iterations, &fp);
                 // console(&kf, &bmp_data, &acc_lp, counter);
                 fflush(stdout);

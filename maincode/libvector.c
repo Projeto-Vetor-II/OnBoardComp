@@ -142,6 +142,7 @@ void logging(rc_kalman_t *kf, rc_bmp_data_t *bmp_data, rc_filter_t *acc_lp, long
                 if (n_iterations == 0)
                 {
                         *fp = fopen(pathNew, "w");
+                        headerll(fp);
                 }
                 else
                 {
