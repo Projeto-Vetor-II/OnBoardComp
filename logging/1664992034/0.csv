@@ -1,0 +1,100 @@
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.000000000,  0.0000, 0.0000, 0.0000, 590.0348, 0.0000
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.020175131,590.0348,-0.0034,-0.0000, 590.0348,-0.1735
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.040341958,590.0347,-0.0069,-0.0000, 590.0348,-0.1709
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.060442548,590.0343,-0.0104, 0.0000, 589.9202,-0.1797
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.080564886,590.0334,-0.0140, 0.0000, 589.9202,-0.1719
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.100665935,590.0326,-0.0175, 0.0000, 589.8803,-0.1746
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.120780065,590.0314,-0.0211, 0.0000, 589.8803,-0.1719
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.140882864,590.0302,-0.0246, 0.0000, 589.8803,-0.1714
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.160988870,590.0289,-0.0282, 0.0000, 589.8713,-0.1735
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.181087711,590.0275,-0.0318, 0.0000, 589.8713,-0.1776
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.201187927,590.0260,-0.0354, 0.0000, 589.8937,-0.1756
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.221323887,590.0246,-0.0390, 0.0000, 589.8937,-0.1763
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.241426686,590.0228,-0.0435, 0.0001, 589.8937,-0.1742
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.261530110,590.0211,-0.0472, 0.0001, 589.8723,-0.1844
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.281633408,590.0194,-0.0509, 0.0001, 589.8723,-0.1829
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.301738582,590.0176,-0.0547, 0.0001, 589.8541,-0.1867
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.321851087,590.0157,-0.0586, 0.0001, 589.8541,-0.1874
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.341970425,590.0136,-0.0624, 0.0001, 589.8541,-0.1895
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.362076598,590.0118,-0.0663, 0.0001, 589.9233,-0.1848
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.382180397,590.0100,-0.0700, 0.0001, 589.9233,-0.1846
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.402310149,590.0081,-0.0738, 0.0001, 589.8716,-0.1869
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.422423613,590.0059,-0.0776, 0.0001, 589.8716,-0.1894
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.442523787,590.0036,-0.0815, 0.0001, 589.8716,-0.1907
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.462631835,590.0013,-0.0854, 0.0001, 589.8851,-0.1924
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.482735467,589.9990,-0.0892, 0.0001, 589.8851,-0.1837
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.502838932,589.9966,-0.0930, 0.0001, 589.8768,-0.1864
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.522953646,589.9941,-0.0968, 0.0001, 589.8768,-0.1887
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.543092105,589.9916,-0.1007, 0.0001, 589.8768,-0.1894
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.563201278,589.9890,-0.1045, 0.0001, 589.8772,-0.1838
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.583307910,589.9863,-0.1083, 0.0001, 589.8772,-0.1857
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.603420498,589.9835,-0.1120, 0.0001, 589.8579,-0.1813
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.623539544,589.9806,-0.1158, 0.0001, 589.8579,-0.1836
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.643647967,589.9776,-0.1196, 0.0002, 589.8579,-0.1882
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.663760473,589.9745,-0.1234, 0.0002, 589.8217,-0.1887
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.683870312,589.9712,-0.1272, 0.0002, 589.8217,-0.1811
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.703972694,589.9678,-0.1309, 0.0002, 589.7429,-0.1782
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.724083075,589.9640,-0.1347, 0.0002, 589.7429,-0.1828
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.744438873,589.9602,-0.1386, 0.0002, 589.7429,-0.1915
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.764554670,589.9564,-0.1426, 0.0002, 589.7835,-0.1971
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.784666259,589.9527,-0.1467, 0.0002, 589.7835,-0.1980
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.804818966,589.9489,-0.1507, 0.0002, 589.7794,-0.1911
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.825096235,589.9450,-0.1546, 0.0002, 589.7794,-0.1876
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.845189994,589.9410,-0.1584, 0.0002, 589.7794,-0.1825
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.865294751,589.9369,-0.1622, 0.0002, 589.7649,-0.1863
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.885396175,589.9328,-0.1660, 0.0002, 589.7649,-0.1810
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.905489892,589.9287,-0.1697, 0.0002, 589.7907,-0.1842
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.925606188,589.9245,-0.1735, 0.0002, 589.7907,-0.1828
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.945706238,589.9204,-0.1773, 0.0003, 589.7907,-0.1823
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.965814577,589.9160,-0.1811, 0.0003, 589.7587,-0.1853
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+0.985931415,589.9116,-0.1849, 0.0003, 589.7587,-0.1839

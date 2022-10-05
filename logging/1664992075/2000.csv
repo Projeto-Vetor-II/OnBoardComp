@@ -1,0 +1,100 @@
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.233045871,589.8083, 0.0896,-0.2749, 590.2070,-0.2626
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.253172893,589.8121, 0.0901,-0.2749, 590.2070,-0.2632
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.273278418,589.8158, 0.0907,-0.2750, 590.2070,-0.2580
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.293386609,589.8196, 0.0912,-0.2750, 590.2070,-0.2626
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.313504882,589.8234, 0.0917,-0.2750, 590.2070,-0.2610
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.333615115,589.8271, 0.0922,-0.2750, 590.2070,-0.2669
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.353742554,589.8308, 0.0926,-0.2750, 590.2070,-0.2644
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.373856994,589.8346, 0.0931,-0.2750, 590.2070,-0.2654
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.394013095,589.8382, 0.0935,-0.2750, 590.1919,-0.2650
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.414128744,589.8419, 0.0938,-0.2751, 590.1919,-0.2682
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.434254599,589.8455, 0.0943,-0.2751, 590.2070,-0.2627
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.454366790,589.8492, 0.0948,-0.2751, 590.2070,-0.2619
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.474467608,589.8529, 0.0953,-0.2751, 590.2070,-0.2657
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.494571008,589.8565, 0.0957,-0.2751, 590.1919,-0.2620
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.514671034,589.8601, 0.0963,-0.2751, 590.1919,-0.2563
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.534783808,589.8637, 0.0969,-0.2751, 590.2070,-0.2567
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.555112635,589.8673, 0.0975,-0.2752, 590.2070,-0.2528
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.575218201,589.8719, 0.0982,-0.2752, 590.2070,-0.2559
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.595326434,589.8756, 0.0988,-0.2752, 590.2221,-0.2588
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.615433376,589.8793, 0.0994,-0.2752, 590.2221,-0.2607
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.635530069,589.8830, 0.0998,-0.2752, 590.2221,-0.2591
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.655690253,589.8866, 0.1003,-0.2752, 590.2221,-0.2630
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.675797319,589.8903, 0.1008,-0.2752, 590.2221,-0.2619
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.695912926,589.8940, 0.1013,-0.2753, 590.2221,-0.2614
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.716025201,589.8976, 0.1017,-0.2753, 590.2221,-0.2679
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.736127351,589.9013, 0.1020,-0.2753, 590.2370,-0.2728
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.756256206,589.9050, 0.1022,-0.2753, 590.2370,-0.2768
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.776368980,589.9087, 0.1024,-0.2753, 590.2370,-0.2714
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.796485795,589.9123, 0.1026,-0.2753, 590.2221,-0.2758
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.816594070,589.9159, 0.1028,-0.2753, 590.2221,-0.2729
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.836703178,589.9195, 0.1030,-0.2753, 590.2070,-0.2755
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.856827284,589.9230, 0.1032,-0.2754, 590.2070,-0.2772
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.876940099,589.9264, 0.1033,-0.2754, 590.2070,-0.2794
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.897056914,589.9300, 0.1034,-0.2754, 590.2221,-0.2785
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.917164814,589.9335, 0.1036,-0.2754, 590.2221,-0.2734
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.937270714,589.9370, 0.1038,-0.2754, 590.2370,-0.2669
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.957574753,589.9406, 0.1042,-0.2754, 590.2370,-0.2642
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.977691068,589.9441, 0.1047,-0.2754, 590.2370,-0.2613
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+40.997815674,589.9477, 0.1052,-0.2754, 590.2524,-0.2574
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.017926948,589.9514, 0.1057,-0.2755, 590.2524,-0.2600
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.038037056,589.9550, 0.1062,-0.2755, 590.2524,-0.2585
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.058159578,589.9586, 0.1068,-0.2755, 590.2524,-0.2563
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.078271228,589.9622, 0.1074,-0.2755, 590.2524,-0.2587
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.098378877,589.9656, 0.1079,-0.2755, 590.2053,-0.2569
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.118531937,589.9689, 0.1084,-0.2755, 590.2053,-0.2555
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.138641091,589.9723, 0.1090,-0.2755, 590.2053,-0.2522
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.158746329,589.9756, 0.1096,-0.2755, 590.2053,-0.2522
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.178846236,589.9789, 0.1100,-0.2755, 590.2053,-0.2567
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.198983470,589.9823, 0.1105,-0.2755, 590.2204,-0.2568
+time,altitude,velocity,accel_bias,alt (bmp),vert_accel,
+41.219080168,589.9857, 0.1110,-0.2756, 590.2204,-0.2521

@@ -65,19 +65,11 @@ int main(void)
         char time_str[16];
         my_itoa(mytime, time_str);
 
-<<<<<<< HEAD
         char path[50];
         strcpy(path, "//OnBoardComp//logging//");
         strcat(path, time_str);
         mkdir(path, S_IRWXU);
         strcat(path, "//");
-=======
-        char path[50]; 
-        strcpy(path,"//OnBoardComp//logging//");
-        strcat(path,time_str);
-        mkdir(path,S_IRWXU);
-        strcat(path,"//");
->>>>>>> 986810b3a4947a54ef592f39a0b098ecd44135b3
 
         // Inicializando matriz de Kalman
         rc_mpu_config_t mpu_conf;

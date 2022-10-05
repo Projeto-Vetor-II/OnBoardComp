@@ -142,7 +142,6 @@ void logging(rc_kalman_t *kf, rc_bmp_data_t *bmp_data, rc_filter_t *acc_lp, long
                 if (n_iterations == 0)
                 {
                         *fp = fopen(pathNew, "w");
-                        headerll(fp);
                 }
                 else
                 {
@@ -167,6 +166,7 @@ void logging(rc_kalman_t *kf, rc_bmp_data_t *bmp_data, rc_filter_t *acc_lp, long
                 }
         }
 
+        headerll(fp);
         fprintf(*fp, "%6.9lf,", (double)counter / 1000000000);
         fprintf(*fp, "%8.4f,", kf->x_est.d[0]);
         fprintf(*fp, "%7.4f,", kf->x_est.d[1]);
@@ -215,7 +215,7 @@ int init_sensors(rc_kalman_t *kf, rc_matrix_t *F, rc_matrix_t *G, rc_matrix_t *H
         // wait for dmp to settle then start filter callback
         printf("waiting for sensors to settle");
         fflush(stdout);
-        rc_usleep(500000);
+        rc_usleep(3000000);
         return 1;
 }
 
