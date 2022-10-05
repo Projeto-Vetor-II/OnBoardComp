@@ -119,7 +119,7 @@ void headerll(FILE **fp)
         fprintf(*fp, "velocity,");
         fprintf(*fp, "accel_bias,");
         fprintf(*fp, "alt (bmp),");
-        fprintf(*fp, "vert_accel,");
+        fprintf(*fp, "vert_accel");
         fprintf(*fp, "\n");
 }
 
@@ -163,10 +163,10 @@ void logging(rc_kalman_t *kf, rc_bmp_data_t *bmp_data, rc_filter_t *acc_lp, long
                         // system("watch -n 1 grep -e Dirty: /proc/meminfo");
 
                         *fp = fopen(pathNew, "w");
+                        headerll(fp);
                 }
         }
 
-        headerll(fp);
         fprintf(*fp, "%6.9lf,", (double)counter / 1000000000);
         fprintf(*fp, "%8.4f,", kf->x_est.d[0]);
         fprintf(*fp, "%7.4f,", kf->x_est.d[1]);
